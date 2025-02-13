@@ -341,7 +341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &267966137
 RectTransform:
   m_ObjectHideFlags: 0
@@ -595,7 +595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &467086643
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1284,7 +1284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &950225935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9fd5e02ac5960428dd697b782675c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textopuntos: {fileID: 0}
+  textopuntos: {fileID: 444528143}
 --- !u!114 &950225937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2027,6 +2027,7 @@ GameObject:
   - component: {fileID: 1683125197}
   - component: {fileID: 1683125200}
   - component: {fileID: 1683125201}
+  - component: {fileID: 1683125202}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -2153,6 +2154,41 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_SortAtRoot: 0
+--- !u!58 &1683125202
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683125196}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1749358922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,7 +2576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1879699125
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2653,6 +2689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2104731856}
   - component: {fileID: 2104731855}
+  - component: {fileID: 2104731857}
   m_Layer: 0
   m_Name: controladorjuego
   m_TagString: Untagged
@@ -2672,7 +2709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b61de7e3c233247968f46fbf573722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instancia: {fileID: 0}
 --- !u!4 &2104731856
 Transform:
   m_ObjectHideFlags: 0
@@ -2688,6 +2724,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2104731857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104731854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53d2f19d5f2a52439aa3b8491742d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelpausa: {fileID: 467086642}
+  panelfinal: {fileID: 267966136}
+  paneljuego: {fileID: 950225934}
+  panelinicio: {fileID: 1879699124}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
