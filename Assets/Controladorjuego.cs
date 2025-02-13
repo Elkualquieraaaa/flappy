@@ -50,7 +50,7 @@ public class Controladorjuego : MonoBehaviour
     public void pausarjuego()
     {
         juegopausado?.Invoke();
-        Time.timeScale = 0f
+        Time.timeScale = 0f;
     }
 
     public void reaunudarjuego()
