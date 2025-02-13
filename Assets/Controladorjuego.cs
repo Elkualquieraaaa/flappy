@@ -5,17 +5,26 @@ using UnityEngine;
 
 public class Controladorjuego : MonoBehaviour
 {
+    public static Controladorjuego instancia;
 
-    public delegate void EventosJuegoDelegado();
+    public delegate void EventosJuegoDelegado ();
     public EventosJuegoDelegado JuegoIniciado;
     public EventosJuegoDelegado Juegofinalizado;
     public EventosJuegoDelegado juegopausado;
     public EventosJuegoDelegado juegoreaunudado;
 
     // Start is called before the first frame update
-    void Start()
+    public void Awake()
     {
-        
+        if (instancia == null)
+        {
+            instancia = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     // Update is called once per frame
