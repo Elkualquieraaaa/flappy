@@ -25,6 +25,8 @@ public class Controladorjuego : MonoBehaviour
             Destroy(gameObject);
         }
 
+        Time.timeScale = 0f;
+
     }
 
     // Update is called once per frame
@@ -36,20 +38,24 @@ public class Controladorjuego : MonoBehaviour
     public void iniciarjuego()
     {
         JuegoIniciado?.Invoke();
+        Time.timeScale = 1f;
     }
 
     public void finalizarjuego()
     {
         Juegofinalizado?.Invoke();
+        Time.timeScale = 0f;
     }
 
     public void pausarjuego()
     {
         juegopausado?.Invoke();
+        Time.timeScale = 0f
     }
 
     public void reaunudarjuego()
     {
         juegoreaunudado?.Invoke();
+        Time.timeScale = 1f;
     }
 }
