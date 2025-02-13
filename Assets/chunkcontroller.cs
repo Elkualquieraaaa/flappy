@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class chunkcontroller : MonoBehaviour
 {
-    [SerializeField] List<Transform> transformslist = new List<Transform>();
+    [SerializeField] List<Chunk> chunks = new List<Chunk>();
     [SerializeField] Transform ultimochunk;
     public float velocity = 1;
 
@@ -17,14 +17,16 @@ public class chunkcontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < transformslist.Count; i++)
+        for (int i = 0; i < chunks.Count; i++)
         {
-            transformslist[i].Translate(Vector3.left*velocity*Time.deltaTime,Space.World);
+            chunks[i].transform.Translate(Vector3.left*velocity*Time.deltaTime,Space.World);
 
-            if (transformslist[i].position.x <= -6)
+            if (chunks[i].transform.position.x <= -6)
             {
-                transformslist[i].position = ultimochunk.position + (Vector3.right*6);
-                ultimochunk = transformslist[i];
+                chunks[i].transform.position = ultimochunk.position + (Vector3.right*6);
+                ultimochunk = chunks[i].transform;
+
+                chunks[i].Generarobstaculos();
             } 
         }
 
