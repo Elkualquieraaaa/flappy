@@ -21,9 +21,9 @@ public class chunkcontroller : MonoBehaviour
         {
             chunks[i].transform.Translate(Vector3.left*velocity*Time.deltaTime,Space.World);
 
-            if (chunks[i].transform.position.x <= -6)
+            if (chunks[i].transform.position.x <= -5.706f)
             {
-                chunks[i].transform.position = ultimochunk.position + (Vector3.right*6);
+                chunks[i].transform.position = ultimochunk.position + (Vector3.right*5.706f);
                 ultimochunk = chunks[i].transform;
 
                 chunks[i].Generarobstaculos();

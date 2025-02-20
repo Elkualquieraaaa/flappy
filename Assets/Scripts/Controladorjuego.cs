@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Controladorjuego : MonoBehaviour
 {
@@ -45,6 +47,7 @@ public class Controladorjuego : MonoBehaviour
     {
         Juegofinalizado?.Invoke();
         Time.timeScale = 0f;
+        SceneManager.LoadScene(0);
     }
 
     public void pausarjuego()
