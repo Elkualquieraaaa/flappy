@@ -9,13 +9,7 @@ public class puntaje : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        controladorpuntaje.Instancia.actualizarpuntaje += Actualizarpuntaje;
     }
 
     public void Actualizarpuntaje(int nuevospoints)

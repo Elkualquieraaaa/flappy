@@ -22,4 +22,13 @@ public class charactercontroller : MonoBehaviour
     {
         rb.velocity = new Vector2(0,forcej); 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Respawn"))
+        {
+            Controladorjuego.instancia.finalizarjuego();
+        }
+    }
+
 }

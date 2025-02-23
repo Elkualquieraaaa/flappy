@@ -18,7 +18,7 @@ public class Controladorjuego : MonoBehaviour
     // Start is called before the first frame update
     public void Awake()
     {
-        if (instancia == null)
+         if (instancia == null)
         {
             instancia = this;
         }
@@ -47,7 +47,6 @@ public class Controladorjuego : MonoBehaviour
     {
         Juegofinalizado?.Invoke();
         Time.timeScale = 0f;
-        SceneManager.LoadScene(0);
     }
 
     public void pausarjuego()

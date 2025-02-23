@@ -5,11 +5,16 @@ using UnityEngine;
 public class Chunk : MonoBehaviour
 { 
     [SerializeField] List<Transform> pivotes = new List<Transform>();
-    List<GameObject> obstaculosinstanciados = new List<GameObject>();  
+    [SerializeField] List<GameObject> obstaculosinstanciados = new List<GameObject>();
+    public bool crearinicio;
     // Start is called before the first frame update
     void Start()
     {
-        Generarobstaculos();
+        if (crearinicio == false)
+        {
+            Generarobstaculos();
+
+        }
     }
 
     // Update is called once per frame
