@@ -66,4 +66,9 @@ public class controladorpuntaje : MonoBehaviour
     {
         return puntos;
     }
+
+    public int Obtenermejorpuntaje()
+    {
+        return mejorpuntuacion;
+    }
 }

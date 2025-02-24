@@ -60,4 +60,9 @@ public class Controladorjuego : MonoBehaviour
         juegoreaunudado?.Invoke();
         Time.timeScale = 1f;
     }
+
+    public void reiniciarjuego()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
