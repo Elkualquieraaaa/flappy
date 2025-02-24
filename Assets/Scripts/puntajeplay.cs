@@ -7,7 +7,7 @@ public class controladorplay : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textopuntos;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         controladorpuntaje.Instancia.actualizarmejorpuntaje += Actualizarmejorpuntaje;
     }

@@ -2069,6 +2069,7 @@ MonoBehaviour:
   - {fileID: 908569495}
   ultimochunk: {fileID: 908569494}
   velocity: 1
+  time: 0
 --- !u!4 &1527108928
 Transform:
   m_ObjectHideFlags: 0
@@ -2149,7 +2150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8, y: -11.200012}
+  m_AnchoredPosition: {x: 8, y: -11.199951}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1639341267
@@ -2654,6 +2655,7 @@ GameObject:
   - component: {fileID: 1871582519}
   - component: {fileID: 1871582521}
   - component: {fileID: 1871582522}
+  - component: {fileID: 1871582523}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2723,7 +2725,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.12, y: 0.07, z: 0}
-  m_LocalScale: {x: 7.969073, y: 7.969073, z: 7.969073}
+  m_LocalScale: {x: 6.391276, y: 6.391276, z: 6.391276}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2815,6 +2817,27 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_SortAtRoot: 0
+--- !u!95 &1871582523
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871582514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b8005b75707a6847817d6cce1e80c44, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1879699124
 GameObject:
   m_ObjectHideFlags: 0
